@@ -14,7 +14,7 @@
           <a :href="siteUrl">{{ siteAuthor }}</a>
         </span>
         <!-- 以下信息请不要修改哦 -->
-        <span class="hidden">
+        <span class="hidden" style="display: none;">
           &amp;&nbsp;Made&nbsp;by
           <a :href="config.github" target="_blank">
             {{ config.author }}
@@ -52,7 +52,7 @@ const fullYear = new Date().getFullYear();
 // 加载配置数据
 // const siteStartDate = ref(import.meta.env.VITE_SITE_START);
 const startYear = ref(
-  import.meta.env.VITE_SITE_START?.length >= 4 ? 
+  import.meta.env.VITE_SITE_START?.length >= 4 ?
   import.meta.env.VITE_SITE_START.substring(0, 4) : null
 );
 const siteIcp = ref(import.meta.env.VITE_SITE_ICP);
